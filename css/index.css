@@ -1,0 +1,13 @@
+body{
+    font-family: Arial;
+    margin: 1rem;
+    padding:1rem;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(/img/fondo.avif)
+}
+header{
+    background: linear-gradient(#51ff0080);
+}
+.menu{
+    
+}
