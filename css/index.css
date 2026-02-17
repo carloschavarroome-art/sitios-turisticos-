@@ -2,12 +2,34 @@ body{
     font-family: Arial;
     margin: 1rem;
     padding:1rem;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url(/img/fondo.avif)
-}
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url(/img/fondo2.webp) repeat no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+   
+
+
 header{
-    background: linear-gradient(#51ff0080);
+    background: linear-gradient(#110797b7);
 }
-.menu{
+.navbar {
+  background-color: #13121200;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+    font-family: Arial;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+}
+
     
-}
