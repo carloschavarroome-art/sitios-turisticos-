@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #f4f6fb, #eef2ff);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #1c7d9b, #27c718);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-menu a:hover {
+    background: #fff;
+    color: #7fc042;
+}
+
+.sitios-turisticos {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+
+.sitios-turisticos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    background: linear-gradient(135deg, #0acf83, #10d1df);
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.precio {
+    display: block;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #050505;
+}
+
+.orden-btn {
+    width: calc(100% - 30px);
+    margin: 10px 15px 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #11e795, #2a5298);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.orden-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #17b309, #0eabdb);
+}
+
+section > .nav-menu {
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1c7d9b;
+    color: #fff;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 600px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card img {
+        height: 180px;
+    }
+}
+
+
