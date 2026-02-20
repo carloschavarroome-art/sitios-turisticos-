@@ -11,6 +11,8 @@ body {
     line-height: 1.6;
 }
 
+/* ================= NAVBAR ================= */
+
 header {
     background: linear-gradient(135deg, #1c7d9b, #27c718);
     padding: 15px 0;
@@ -27,6 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Evita que se rompa en móvil */
 }
 
 .logo h1 {
@@ -35,10 +38,13 @@ header {
     font-weight: 700;
 }
 
+/* MENÚ SIEMPRE HORIZONTAL */
 .nav-menu {
     list-style: none;
     display: flex;
+    flex-direction: row; /* Siempre horizontal */
     gap: 20px;
+    flex-wrap: wrap; /* Se adapta si no cabe */
 }
 
 .nav-menu a {
@@ -47,7 +53,7 @@ header {
     font-weight: 500;
     padding: 6px 10px;
     border-radius: 6px;
-    transition: background 0.3s, color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .nav-menu a:hover {
@@ -55,18 +61,21 @@ header {
     color: #7fc042;
 }
 
+/* ================= SECCIÓN ================= */
+
 .sitios-turisticos {
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
 }
 
-
 .sitios-turisticos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
+
+/* ================= CARDS ================= */
 
 .card {
     background: #ffffff;
@@ -126,10 +135,7 @@ header {
     background: linear-gradient(135deg, #17b309, #0eabdb);
 }
 
-section > .nav-menu {
-    justify-content: center;
-    margin-top: 50px;
-}
+/* ================= FOOTER ================= */
 
 footer {
     text-align: center;
@@ -139,12 +145,9 @@ footer {
     margin-top: 50px;
 }
 
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 600px) {
-    .navbar .container {
-        flex-direction: column;
-        gap: 15px;
-    }
 
     .logo h1 {
         font-size: 18px;
@@ -152,13 +155,16 @@ footer {
     }
 
     .nav-menu {
-        flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+        padding: 5px 8px;
     }
 
     .card img {
         height: 180px;
     }
 }
-
-
